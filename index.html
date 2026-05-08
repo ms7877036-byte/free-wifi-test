@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WiFi Network System</title>
+    <title>WiFi Connect System</title>
     <style>
         body {
             margin: 0;
@@ -12,68 +11,51 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #e9ecef;
+            background-color: #f0f2f5;
             font-family: 'Arial', sans-serif;
         }
         .container {
             text-align: center;
             background: #ffffff;
-            padding: 40px;
-            border-radius: 25px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-            border: 2px solid #007bff;
-            max-width: 320px;
+            padding: 50px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border: 3px solid #ff4757;
+            max-width: 350px;
         }
-        .wifi-icon {
-            color: #007bff;
-            font-size: 14px;
-            margin-bottom: 10px;
+        .status-header {
+            color: #2ed573;
             font-weight: bold;
-        }
-        .anime-box {
-            margin: 20px auto;
-            width: 150px;
-            height: 150px;
-        }
-        h1 {
-            color: #dc3545;
-            font-size: 22px;
-            margin: 15px 0;
-        }
-        p {
-            color: #495057;
             font-size: 14px;
-            line-height: 1.6;
+            margin-bottom: 30px;
+            display: block;
+        }
+        .main-text {
+            color: #ff4757;
+            font-size: 32px;
+            font-weight: 900;
+            margin: 20px 0;
+            line-height: 1.4;
+        }
+        .sub-text {
+            color: #747d8c;
+            font-size: 13px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="wifi-icon">📶 Connected to Free_WiFi_HighSpeed</div>
-        <div class="anime-box">
-            <!-- رسم SVG لأنمي حمار مبسط مع الحركة المطلوبة -->
-            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                
-                <ellipse cx="35" cy="20" rx="5" ry="15" fill="#808080" transform="rotate(-15 35 20)"/>
-                <ellipse cx="65" cy="20" rx="5" ry="15" fill="#808080" transform="rotate(15 65 20)"/>
-                <!-- الرأس -->
-                <ellipse cx="50" cy="45" rx="25" ry="22" fill="#808080"/>
-                <!-- العينين (ستايل أنمي) -->
-                <circle cx="40" cy="40" r="3" fill="white"/>
-                <circle cx="60" cy="40" r="3" fill="white"/>
-                <circle cx="40" cy="40" r="1.5" fill="black"/>
-                <circle cx="60" cy="40" r="1.5" fill="black"/>
-                <!-- الفم/الخطم -->
-                <ellipse cx="50" cy="55" rx="12" ry="8" fill="#c0c0c0"/>
-                <!-- الحركة المطلوبة (اليد والأصبع) -->
-                <rect x="47" y="65" width="6" height="25" rx="3" fill="#808080"/> <!-- اليد -->
-                <rect x="48" y="58" width="4" height="15" rx="2" fill="#808080"/> <!-- الأصبع الأوسط -->
-                <path d="M45 70 Q50 72 55 70" fill="none" stroke="#000" stroke-width="1"/>
-            </svg>
+        <span class="status-header">📶 تم الاتصال بنجاح.. جاري تحميل البيانات</span>
+        
+        <div class="main-text">
+            شوف حد ينيكك
         </div>
-        <h1>يا حمار!</h1>
-        <p>لا يوجد إنترنت مجاني هنا.. <br> ابحث عن عمل أو ادرس بدلاً من محاولة سرقة الواي فاي!</p>
-        <div style="margin-top:20px; font-size: 10px; color: #adb5bd;">Error Code: 404_BRAIN_NOT_FOUND</div>
+
+        <p class="sub-text">
+            عذراً، يبدو أنك حاولت سرقة شبكة لا تخصك.
+            <br>
+            يرجى المحاولة مرة أخرى في وقت لاحق.
+        </p>
     </div>
 </body>
 </html>
